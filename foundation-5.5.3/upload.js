@@ -31,7 +31,7 @@ var lines = [];
 for (var i=1; i<allTextLines.length-1; i++) {
 var data = allTextLines[i].split(',');
 if (data.length == headers.length) {
-if(validate(data)){
+if(validate1(data)){
 var tarr = {};
 var idobj={};
 for (var j=0; j<headers.length; j++) {
@@ -58,7 +58,7 @@ localStorage.setItem("id",id);
 console.log(JSON.stringify(jasonarray));
 }
 
-function validate(data){
+function validate1(data){
 var name=data[0];
 var email=data[1];
 var phno=data[2];
